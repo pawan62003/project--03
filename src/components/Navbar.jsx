@@ -46,7 +46,23 @@ const Navbar = () => {
 
 
        <div style={{display:'flex',justifyContent:'space-around',width:'30%'}}>
-          <NavLink style={{color:'black',fontSize:'20px',textDecoration:'none',marginTop:'11px'}}  to='/scrapbook'><EditIcon /><br/> SCRAPBOOK</NavLink>
+          <NavLink style={{color:'black',fontSize:'20px',textDecoration:'none',marginTop:'11px'}}  to='/scrapbook'>
+                <EditIcon /><br/>
+                SCRAPBOOK
+          </NavLink>
+
+
+
+
+
+
+
+
+
+          {/* <EditIcon /><br/> SCRAPBOOK */}
+
+
+
           <NavLink style={{color:'black',fontSize:'20px',textDecoration:'none',marginTop:'11px'}}  to='/search'><Search2Icon /><br/> SEARCH</NavLink>
           <NavLink style={{color:'black',fontSize:'20px',textDecoration:'none',marginTop:'11px'}}  to='/cart'><ViewIcon /><br/> CART</NavLink>
           <NavLink style={{color:'black',fontSize:'20px',textDecoration:'none',marginTop:'11px'}}  to='/profile'><StarIcon/><br/> PROFILE</NavLink>

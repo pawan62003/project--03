@@ -1,3 +1,5 @@
+import {Button} from '@chakra-ui/react'
+// import {BiLike,BiChat,BiShare} from '@chakra-ui/icons'
 const Home = () => {
     
     
@@ -13,6 +15,25 @@ const Home = () => {
         {image:'https://img1.junaroad.com//assets/images/mobileNotif/img-1674029296684.jpg?crsl_pos=0',alt:'slider'}
 
     ]
+
+
+    const homeData = [
+        {title:'NEW ARRIVALS',image:'https://img0.junaroad.com/stories/story_p_63bbc7a7cc8b5e082d248dcc-1673860725.jpeg'},
+        {title:'FRESH PRINTS IN THE HOUSE',image:"https://img2.junaroad.com/stories/story_p_63b6830ffd1d3c18522ec047-1673860871.jpeg"},
+        {title:'UP YOUR FASHION GAME',image:"https://img0.junaroad.com/stories/story_p_63c50384f38057081856f28a-1673860919.jpeg"},
+        {title:'#WINTERWORTHY CELEB LOOK',image:"https://img0.junaroad.com/stories/story_p_63c50384f38057081856f28a-1673860919.jpeg"},
+        {title:'TRENDING THIS YEAR',image:"https://img2.junaroad.com/stories/story_p_63ad51d0f380570823be15db-1672997394.jpeg"},
+        {title:'DO IT LIKE ARJUN KAPOOR',image:"https://img3.junaroad.com/stories/story_p_63ae6641adb8b84ef73d4c15-1672907338.jpeg"},
+        {title:'CASUAL. COOL. COMFY',image:"https://img0.junaroad.com/stories/story_p_63b68bd7fd1d3c18522ecb48-1673333935.jpeg"},
+        {title:'STAY HIGH ON TRENDS',image:"https://img2.junaroad.com/stories/story_p_63a390baadb8b82d0e0f299b-1671673435.jpeg"},
+        {title:'TRENDS WHILE SHOES FTW',image:"https://img3.junaroad.com/stories/story_p_63a3b451adb8b82d0e0f4675-1672181755.jpeg"},
+        {title:'CELEB #OOTD TO RECREATE',image:"https://img0.junaroad.com/stories/story_p_63a2dcb5f38057082211c050-1671625641.jpeg"},
+        {title:'SNAG SHIRTS, CHINOS AND SHINE',image:"https://img2.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg"},
+        {title:'ALL NEW AND TOTALLY YOU',image:"https://img2.junaroad.com/stories/story_p_63b683d013cb38081c3a1a68-1673860769.jpeg"},
+    ]
+
+
+
      
     let slide = 0
     setInterval(()=>{
@@ -94,6 +115,16 @@ const Home = () => {
         <div id="second_slider">
             <img style={{width:'100%'}} src="https://img1.junaroad.com//assets/images/mobileNotif/img-1674044135107.jpg?crsl_pos=0" alt="slider" />
         </div>
+       </div>
+
+       <div id='home_card' style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)' ,gap:'20px',width:'60%',margin:'auto',marginTop:'20px'}}>
+           {
+            homeData.map(item => <div style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}}>
+                <p>{item.title}</p>
+                <img style={{width:'100%'}} src={item.image} alt={item.title} />
+                
+            </div>)
+           }
        </div>
     </>
 }
