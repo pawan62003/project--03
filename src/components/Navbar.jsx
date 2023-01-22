@@ -39,9 +39,12 @@ const Navbar = () => {
 
        <div style={{width:'50%',display:'flex',justifyContent:'space-around'}}>
            <h1>LimeRoad</h1>
-           {
-            Links1.map(item => <NavLink style={{color:'black',fontSize:'24px',textDecoration:'none',marginTop:'24px'}} key={Math.random()} to={item.path}>{item.title}</NavLink>)
-           }
+          <NavLink style={{color:'black',fontSize:'24px',textDecoration:'none',marginTop:'24px'}}  to='/women'>WOMEN</NavLink>
+          <NavLink style={{color:'black',fontSize:'24px',textDecoration:'none',marginTop:'24px'}}  to='/men'>MEN</NavLink>
+          <NavLink style={{color:'black',fontSize:'24px',textDecoration:'none',marginTop:'24px'}}  to='/kids'>KIDS</NavLink>
+          <NavLink style={{color:'black',fontSize:'24px',textDecoration:'none',marginTop:'24px'}}  to='/'>HOME</NavLink>
+          <NavLink style={{color:'red',fontSize:'24px',textDecoration:'none',marginTop:'24px'}}  to='/offers'>OFFERS</NavLink>
+           
        </div>
 
 

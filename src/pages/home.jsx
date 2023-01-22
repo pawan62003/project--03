@@ -1,9 +1,7 @@
-import {Button} from '@chakra-ui/react'
+// import {Button} from '@chakra-ui/react'
 // import {BiLike,BiChat,BiShare} from '@chakra-ui/icons'
 const Home = () => {
     
-    
-   
     const images = [
         {image:'https://img1.junaroad.com//assets/images/mobileNotif/img-1667388470485.jpg?crsl_pos=0',alt:'slider'},
         {image:'https://img1.junaroad.com//assets/images/mobileNotif/img-1652694665568.jpg?crsl_pos=0',alt:'slider'},
@@ -15,7 +13,6 @@ const Home = () => {
         {image:'https://img1.junaroad.com//assets/images/mobileNotif/img-1674029296684.jpg?crsl_pos=0',alt:'slider'}
 
     ]
-
 
     const homeData = [
         {title:'NEW ARRIVALS',image:'https://img0.junaroad.com/stories/story_p_63bbc7a7cc8b5e082d248dcc-1673860725.jpeg'},
@@ -57,7 +54,7 @@ const Home = () => {
        }
     },4000)
 
-
+    
 
     return <>
        <div style={{width:'60%',margin:'auto', marginTop:'10px', display:'flex',justifyContent:'space-around',gap:'20px'}}>
