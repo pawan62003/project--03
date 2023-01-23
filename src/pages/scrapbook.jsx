@@ -1,5 +1,5 @@
 import { background, Input } from '@chakra-ui/react'
-
+import { Navigate,Link } from 'react-router-dom'
 import { useState } from 'react'
 const ScerapBook = () => {
 
@@ -8,7 +8,11 @@ const ScerapBook = () => {
     const mobileSet = (e) => {
         setMobile(e.target.value);
     }
-    console.log(mobile);
+    const NextBtn = () => {
+        alert("Login successfull")
+        
+    }
+    // console.log(mobile);
     return <>
        <div style={{width:'30%',margin:'auto' ,marginTop:'20px'}}>
            <div style={{display:'flex',justifyContent:'space-around',gap:'10px',boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'}}>
@@ -22,7 +26,8 @@ const ScerapBook = () => {
           
                <Input style={{width:'97%',padding:'5px'}} value={mobile} onChange={mobileSet} variant='Flushed' placeholder='Enter Your Mobile Number' /><br/>
            <br />
-           <button style={{width:'100%',padding:'10px' ,border:'none',background:'red',}}>NEXT</button>
+           <Link to='/'><button onClick = {NextBtn} style={{width:'100%',padding:'10px' ,border:'none',background:'red',}}>NEXT</button></Link>
+           
        </div>
     </>
 }
